@@ -1,0 +1,15 @@
+{
+    "name": "kelvynwolff/sweetcontrol",
+    "description": "Software para gestão de uma confeitaria",
+    "type": "project",
+    "require": {
+        "phpunit/phpunit": "*"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Kelvynwolff\\Sweetcontrol\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
