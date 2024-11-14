@@ -2,7 +2,7 @@
 
 // Função para abrir o popup
 function abrirPopup() {
-  document.getElementById('popup').style.display = 'flex'; // Alterado para 'flex' para centralizar corretamente
+  document.getElementById('popup').style.display = 'flex';
 }
 
 // Função para fechar o popup
@@ -69,39 +69,4 @@ function enviarFormulario(event) {
     const unidade = grupo.querySelector('select').value;
     return { ingrediente, peso, unidade };
   });
-
-  // Preparação dos dados para envio ao backend
-  const novaReceita = {
-    titulo,
-    resumo,
-    foto,
-    quantidade,
-    modo_preparo: modoPreparo,
-    ingredientes: JSON.stringify(ingredientes),
-  };
-
-  // Envio da requisição para o backend
-  fetch('http://localhost/api/receitas.php', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(novaReceita),
-  })
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error('Erro na requisição: ' + response.status);
-      }
-      return response.json();
-    })
-    .then((data) => {
-      if (data.success) {
-        receitas.push(novaReceita); // Adiciona a receita localmente para renderizar
-        renderizarReceitas();
-        fecharPopup();
-      } else {
-        alert(data.message || 'Erro ao salvar a receita');
-      }
-    })
-    .catch((error) => console.error('Erro:', error));
 }

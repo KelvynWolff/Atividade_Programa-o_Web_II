@@ -14,7 +14,7 @@
 body {
   background-color: #fffaf0;
   color: #333333;
-  padding-top: 70px; /* Compensação para a navbar fixa */
+  padding-top: 70px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -143,9 +143,9 @@ small {
 
 .card-logo img {
   width: auto;
-  height: 300px; /* Ajuste para a altura desejada */
+  height: 300px;
   max-width: 100%;
-  object-fit: contain; /* Mantém a proporção da imagem */
+  object-fit: contain;
 }
 
 /* Estilos para a navbar */
