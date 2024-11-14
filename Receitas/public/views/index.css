@@ -1,0 +1,233 @@
+/**
+ * Estilos gerais
+ *
+ * @format
+ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #fffaf0;
+  color: #333333;
+  padding-top: 70px; /* Espaço para compensar a navbar fixa */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+/* Navbar personalizada */
+.navbar.customizado {
+  background-color: #ffa500;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.navbar-brand {
+  color: white !important;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  color: white !important;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffd700 !important;
+}
+
+.navbar-nav .btn {
+  font-weight: bold;
+  margin-left: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-nav .btn-outline-primary {
+  color: #007bff;
+  border-color: #007bff;
+}
+
+.navbar-nav .btn-outline-primary:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.navbar-nav .btn-outline-secondary {
+  color: #6c757d;
+  border-color: #6c757d;
+}
+
+.navbar-nav .btn-outline-secondary:hover {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+/* Estilos do título e container principal */
+h1 {
+  color: #333;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 800px;
+  padding: 20px;
+  margin: auto;
+}
+
+/* Estilos dos cards no index */
+.card-index {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 200px;
+  min-width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-index:hover {
+  transform: scale(1.05) rotate(1deg);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  color: #333;
+  font-weight: bold;
+}
+
+.bi-plus-circle {
+  color: #ff69b4;
+}
+
+/* Popup */
+.popup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+/* Popup Content */
+.popup-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 90%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  color: #333;
+  cursor: pointer;
+}
+
+.popup h2 {
+  color: #ff69b4;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.popup .form-label {
+  font-weight: bold;
+}
+
+#previsao-foto {
+  display: none;
+  width: 100%;
+  max-width: 200px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+/* Botões adicionais para o index */
+.btn-primary {
+  background-color: #ffa500;
+  border: none;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #ff8c00;
+}
+
+.btn-success {
+  background-color: #32cd32;
+  border: none;
+  color: white;
+}
+
+.btn-success:hover {
+  background-color: #2e8b57;
+}
+
+/* Estilos específicos do card de login e cadastro */
+.card {
+  max-width: 400px;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-logo {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.card-header {
+  background-color: #ffa500;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 15px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.btn-primary.w-100 {
+  background-color: #ff69b4;
+  border: none;
+  font-weight: bold;
+}
+
+.btn-primary.w-100:hover {
+  background-color: #ff1493;
+}

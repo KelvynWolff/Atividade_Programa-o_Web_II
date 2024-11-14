@@ -1,0 +1,208 @@
+/**
+ * Estilos gerais
+ *
+ * @format
+ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #fffaf0;
+  color: #333333;
+  padding-top: 70px; /* Compensação para a navbar fixa */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+/* Container central */
+.container {
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  margin: auto;
+}
+
+/* Estilo do card */
+.card {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card-header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 15px;
+  background-color: #ffa500;
+  color: white;
+  text-align: center;
+  border-radius: 8px 8px 0 0;
+}
+
+.card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Estilos dos campos de formulário */
+label {
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 5px;
+}
+
+input[type='email'],
+input[type='password'],
+input[type='text'] {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: border 0.3s;
+  margin-bottom: 10px;
+}
+
+input[type='email']:focus,
+input[type='password']:focus,
+input[type='text']:focus {
+  border-color: #00bfff;
+}
+
+/* Estilo dos botões */
+button {
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #ff69b4;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 100%;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #ff1493;
+}
+
+/* Lista de critérios de senha */
+ul#criteriosSenha {
+  padding-left: 20px;
+  color: #888888;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  list-style: none;
+}
+
+ul#criteriosSenha li {
+  margin-bottom: 5px;
+}
+
+ul#criteriosSenha li.atendido {
+  color: #32cd32;
+}
+
+/* Mensagem de erro para confirmação de senha */
+small {
+  color: red;
+  font-size: 0.875rem;
+}
+
+/* Link para cadastro */
+.btn-secondary {
+  color: #00bfff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.btn-secondary:hover {
+  color: #1e90ff;
+}
+
+/* Estilos para a logo */
+.card-logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.card-logo img {
+  width: auto;
+  height: 300px; /* Ajuste para a altura desejada */
+  max-width: 100%;
+  object-fit: contain; /* Mantém a proporção da imagem */
+}
+
+/* Estilos para a navbar */
+.navbar.customizado {
+  background-color: #ffa500;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.navbar-brand {
+  color: white !important;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  color: white !important;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffd700 !important;
+}
+
+.navbar-nav .btn {
+  font-weight: bold;
+  margin-left: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-nav .btn-outline-primary {
+  color: #007bff;
+  border-color: #007bff;
+}
+
+.navbar-nav .btn-outline-primary:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.navbar-nav .btn-outline-secondary {
+  color: #6c757d;
+  border-color: #6c757d;
+}
+
+.navbar-nav .btn-outline-secondary:hover {
+  background-color: #6c757d;
+  color: #fff;
+}
